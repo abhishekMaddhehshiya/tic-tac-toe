@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg,hsl(240deg 100% 20%) 0%,hsl(231deg 89% 23%) 4%,hsl(228deg 70% 26%) 9%,  hsl(226deg 53% 30%) 15%,  hsl(225deg 40% 33%) 21%,   hsl(223deg 27% 36%) 28%,   hsl(227deg 20% 42%) 36%,   hsl(237deg 16% 49%) 43%,   hsl(248deg 19% 55%) 51%,    hsl(260deg 23% 61%) 59%,  hsl(271deg 28% 66%) 66%,    hsl(281deg 34% 70%) 73%,    hsl(285deg 40% 68%) 80%,    hsl(290deg 45% 66%) 86%,    hsl(295deg 48% 64%) 91%,hsl(300deg 51% 61%) 96%,hsl(304deg 58% 60%) 100%);
+    padding: 30px;
+}
+
+p{
+    height: 50px;
+    width: 300px;
+    background-color: rgb(139, 87, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: white;
+}
+p.transition{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.tictactoe{
+    width: 320px;
+    height: 320px;
+    background-color:#615488;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.box{
+    background-color: #681a92;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+    cursor: pointer;
+
+}
+
+.box.win{
+    background-color: rgb(11, 182, 125);
+}
+button{
+    z-index: -1;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(139, 87, 173);
+    border-radius: 10px;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color:#3d325f;
+}
+
+button.active{
+    z-index: 1;
+}
+
+
+
+
