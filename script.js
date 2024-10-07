@@ -33,7 +33,7 @@ const winPositions = [
 ]
 
 function chaekGameOver(){
-    winPositions.forEach((position) => {
+    for(const position of winPositions) {
         if((gameGrid[position[0]] !== "" ||gameGrid[position[1]] !== "" ||gameGrid[position[2]] !== "") 
         && (gameGrid[position[0]] === gameGrid[position[1]]) && (gameGrid[position[1]] === gameGrid[position[2]])){
             boxes[position[0]].classList.add("win");
@@ -46,9 +46,9 @@ function chaekGameOver(){
             gameInfo.classList.add("transition");
             newGame.classList.add("active");
             return;
-            
         }
-    })
+    }
+
     if(count == 9){
         gameInfo.innerText = `game tied!`;
         gameInfo.classList.add("transition");
