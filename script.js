@@ -45,6 +45,7 @@ function chaekGameOver(){
             gameInfo.innerText = `winner player: ${gameGrid[position[0]]}`;
             gameInfo.classList.add("transition");
             newGame.classList.add("active");
+            return;
             
         }
     })
@@ -52,6 +53,7 @@ function chaekGameOver(){
         gameInfo.innerText = `game tied!`;
         gameInfo.classList.add("transition");
         newGame.classList.add("active");
+        return;
     }
 }
 
